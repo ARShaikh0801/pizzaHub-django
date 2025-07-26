@@ -1,0 +1,17 @@
+{% extends "menu/base.html" %}
+{% block pi %}active{% endblock pi %}
+{% block body %}
+<div class="menu_list">
+    {% for pizza in pizzas %}
+    <div class="menu_list_item">
+        <span class="menu_list_title">{{pizza.name}}</span>
+        <span class="menu_prices">{{pizza.price}} ₹</span>
+        <span class="ingredient">{{pizza.ingredients}}</span>
+        {% if pizza.vegetarian %}
+        <span class="veg">VEGETARIAN</span>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock body %}
+

@@ -1,0 +1,17 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Pizzas</title>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+    {% block css %}{% endblock css %}
+</head>
+<body>
+    <a href="{% url 'main:index' %}"><img class="smalllogo" src="{% static 'menu/images/Main Logo.png' %}"></a>
+    <div class="menu_title">
+        <a href="/menu"><h1 class="items pizza {% block pi %}{% endblock pi %}">Pizzas</h1></a>
+        <a href="pasta"><h1 class="items pasta {% block pa %}{% endblock pa %}">Pastas</h1></a>
+    </div>
+    {% block body %}{% endblock body %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "menu/base.html" %}
+{% block pa %}active{% endblock pa %}
+{% block body %}
+<div class="menu_list">
+    {% for pasta in pastas %}
+    <div class="menu_list_item">
+        <span class="menu_list_title">{{pasta.name}}</span>
+        <span class="menu_prices">{{pasta.price}} ₹</span>
+        <span class="ingredient">{{pasta.ingredients}}</span>
+        {% if pasta.vegetarian %}
+        <span class="veg">VEGETARIAN</span>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock body %}

@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/menu_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    margin: 0px;
+    font-family: Arial;
+}
+.smalllogo {
+    width: 200px;
+    margin-top: -25px;
+    margin-bottom: -60px;
+}
+h1 {
+    display: inline;
+    padding: 8px 22px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    background-color: #dd7835;
+}
+.items{
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+.items:hover{
+    cursor: pointer;
+}
+.menu_title{
+    margin-top: 45px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+.menu_list{
+    margin-left: 30px;
+}
+.menu_list_item{
+    margin: 30px;
+}
+.menu_list_title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 350px;
+    display: inline-block;
+}
+.menu_prices{
+    color: #dd7835;
+    font-size: 20px;
+    margin-left: 8px;
+    width: 70px;
+    display: inline-block;
+    text-align: right;
+}
+.ingredient{
+    color: #d8d8d8;
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+    width: 320px;
+}
+.veg{
+    background-color: #dd7835;
+    color: black;
+    font-size: 9px;
+    padding: 3px 8px;
+    display: inline-block;
+    margin-top: 4px;
+    border-radius: 8px;
+    font-weight: bold;
+}
