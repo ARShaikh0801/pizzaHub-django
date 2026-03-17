@@ -121,6 +121,20 @@ h1 {
     letter-spacing: 0.5px;
 }
 
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #d8d8d8;
+}
+
 /* ===== Tablet (≤ 768px) ===== */
 @media (max-width: 768px) {
     .smalllogo {

@@ -53,14 +53,14 @@
   <em>Sleek dark overlay with pill-tab navigation and orange-accented pricing</em>
 </p>
 
-![pizzaMenu](<project screenshots/pizzaPage.png>)
+![pizzaMenu](<project screenshots/pizzaPageEdited.png>)
 
 <p align="center">
   <strong>Pasta Menu</strong><br/>
   <em>Sleek dark overlay with pill-tab navigation and orange-accented pricing</em>
 </p>
 
-![pastaMenu](<project screenshots/pastaPage.png>)
+![pastaMenu](<project screenshots/pastaPageEdited.png>)
 
 ---
 
