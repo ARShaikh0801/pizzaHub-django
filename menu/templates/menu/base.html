@@ -1,17 +1,23 @@
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Pizzas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu — PizzaHub</title>
     <link rel="stylesheet" href="{% static 'menu/style.css' %}">
     {% block css %}{% endblock css %}
 </head>
 <body>
-    <a href="{% url 'main:index' %}"><img class="smalllogo" src="{% static 'menu/images/Main Logo.png' %}"></a>
-    <div class="menu_title">
+    <header>
+        <a href="{% url 'main:index' %}">
+            <img class="smalllogo" src="{% static 'menu/images/Main Logo.png' %}" alt="PizzaHub Logo">
+        </a>
+    </header>
+    <nav class="menu_title">
         <a href="/menu"><h1 class="items pizza {% block pi %}{% endblock pi %}">Pizzas</h1></a>
-        <a href="pasta"><h1 class="items pasta {% block pa %}{% endblock pa %}">Pastas</h1></a>
-    </div>
+        <a href="/menu/pasta/"><h1 class="items pasta {% block pa %}{% endblock pa %}">Pastas</h1></a>
+    </nav>
     {% block body %}{% endblock body %}
 </body>
 </html>

@@ -1,71 +1,115 @@
-body{
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/menu_background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/menu_background.jpg") no-repeat center center fixed;
     background-size: cover;
     color: white;
-    margin: 0px;
-    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
+
+/* ===== Header ===== */
+header {
+    padding: 10px 20px;
+}
+
+/* ===== Small Logo ===== */
 .smalllogo {
-    width: 200px;
-    margin-top: -25px;
-    margin-bottom: -60px;
+    width: 180px;
+    max-width: 40vw;
+    height: auto;
+    display: block;
 }
-h1 {
-    display: inline;
-    padding: 8px 22px;
-    
-}
-a{
+
+/* ===== Links ===== */
+a {
     text-decoration: none;
     color: white;
 }
-.active{
+
+/* ===== Tab Navigation ===== */
+.menu_title {
+    margin: 20px 0 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+h1 {
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.items {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.items:hover {
+    background-color: rgba(221, 120, 53, 0.4);
+}
+
+.active {
     background-color: #dd7835;
 }
-.items{
-    border-radius: 20px;
-    margin-left: 10px;
-    
+
+.active:hover {
+    background-color: #dd7835;
 }
-.items:hover{
-    cursor: pointer;
+
+/* ===== Menu List ===== */
+.menu_list {
+    margin: 0 20px 40px 30px;
 }
-.menu_title{
-    margin-top: 45px;
-    margin-bottom: 50px;
-    margin-left: 10px;
+
+.menu_list_item {
+    margin: 25px 0;
 }
-.menu_list{
-    margin-left: 30px;
-}
-.menu_list_item{
-    margin: 30px;
-}
-.menu_list_title{
+
+/* ===== Menu Item Title ===== */
+.menu_list_title {
     font-size: 20px;
     font-weight: bold;
-    width: 350px;
     display: inline-block;
+    max-width: 350px;
+    width: 100%;
 }
-.menu_prices{
+
+/* ===== Price ===== */
+.menu_prices {
     color: #dd7835;
     font-size: 20px;
     margin-left: 8px;
-    width: 70px;
     display: inline-block;
+    min-width: 60px;
     text-align: right;
 }
-.ingredient{
+
+/* ===== Ingredients ===== */
+.ingredient {
     color: #d8d8d8;
     font-size: 14px;
     margin-top: 4px;
     display: block;
-    width: 320px;
+    max-width: 400px;
+    width: 100%;
 }
-.veg{
+
+/* ===== Vegetarian Badge ===== */
+.veg {
     background-color: #dd7835;
     color: black;
     font-size: 9px;
@@ -74,4 +118,78 @@ a{
     margin-top: 4px;
     border-radius: 8px;
     font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Tablet (≤ 768px) ===== */
+@media (max-width: 768px) {
+    .smalllogo {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 6px 18px;
+    }
+
+    .menu_list {
+        margin: 0 15px 30px 15px;
+    }
+
+    .menu_list_title {
+        font-size: 18px;
+        max-width: 280px;
+    }
+
+    .menu_prices {
+        font-size: 18px;
+    }
+}
+
+/* ===== Mobile (≤ 480px) ===== */
+@media (max-width: 480px) {
+    header {
+        padding: 8px 12px;
+    }
+
+    .smalllogo {
+        width: 120px;
+    }
+
+    .menu_title {
+        margin: 15px 0 20px 8px;
+        gap: 6px;
+    }
+
+    h1 {
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    .menu_list {
+        margin: 0 10px 20px 10px;
+    }
+
+    .menu_list_item {
+        margin: 20px 0;
+    }
+
+    .menu_list_title {
+        font-size: 16px;
+        max-width: 100%;
+        display: block;
+    }
+
+    .menu_prices {
+        font-size: 16px;
+        margin-left: 0;
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+    }
+
+    .ingredient {
+        font-size: 13px;
+        max-width: 100%;
+    }
 }

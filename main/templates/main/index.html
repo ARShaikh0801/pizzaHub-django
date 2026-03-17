@@ -1,13 +1,15 @@
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pizzaHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaHub</title>
     <link rel="stylesheet" href="{% static 'main/style.css' %}">
 </head>
 <body>
     <div class="centered">
-        <img class="logo" src="{% static 'main/images/Main Logo.png' %}">
+        <img class="logo" src="{% static 'main/images/Main Logo.png' %}" alt="PizzaHub Logo">
         <a href="{% url 'menu:index' %}">See our menu</a>
     </div>
 </body>
