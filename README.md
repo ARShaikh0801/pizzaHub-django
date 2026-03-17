@@ -229,4 +229,10 @@ This project is open source.
 
 <p align="center">
   Made with ❤️ and 🍕 by <a href="https://github.com/ARShaikh0801">A.R.Shaikh</a>
+  <br/>
+
+  [GitHub](https://github.com/ARShaikh0801) • [LinkedIn](https://www.linkedin.com/in/shaikh-abdulrauf-asifparvez-b4485435a)
+  
+  <br/>
+  
 </p>
