@@ -46,10 +46,21 @@
   <em>Full-screen background with centered logo and "See our menu" call-to-action</em>
 </p>
 
+![landingPage](<project screenshots/homePage.png>)
+
 <p align="center">
   <strong>Pizza Menu</strong><br/>
   <em>Sleek dark overlay with pill-tab navigation and orange-accented pricing</em>
 </p>
+
+![pizzaMenu](<project screenshots/pizzaMenu.png>)
+
+<p align="center">
+  <strong>Pasta Menu</strong><br/>
+  <em>Sleek dark overlay with pill-tab navigation and orange-accented pricing</em>
+</p>
+
+![pastaMenu](<project screenshots/pastaMenu.png>)
 
 ---
 
